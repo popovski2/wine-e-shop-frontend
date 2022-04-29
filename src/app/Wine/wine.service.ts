@@ -26,7 +26,7 @@ export class WineService {
 
   //add wine
   public addWine(wine: Wine): Observable<Wine>{
-    return this.http.post<Wine>(`${this.apiServerUrl}/wines/add`,wine);
+    return this.http.post<Wine>(`${this.apiServerUrl}/wines/addWine`,wine);
   }
 
   //update wine

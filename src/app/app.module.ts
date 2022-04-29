@@ -6,11 +6,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import { WinesComponent } from './wines/wines.component';
 import {WineService} from "./Wine/wine.service";
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { PieDataService} from "./pie-data.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    WinesComponent
+    WinesComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,7 @@ import {WineService} from "./Wine/wine.service";
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [WineService],
+  providers: [WineService, PieDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

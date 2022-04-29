@@ -3,6 +3,9 @@ import {Wine} from "./Wine/wine";
 import {WineService} from "./Wine/wine.service";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
+import {IData} from "./pie-data.interface";
+import {PieDataService} from "./pie-data.service";
+import {PieChartComponent} from "./pie-chart/pie-chart.component";
 
 @Component({
   selector: 'app-root',

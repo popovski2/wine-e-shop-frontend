@@ -12,10 +12,10 @@ export interface Wine{
   price:number,
   quantity:number,
   imageUrl:string,
-  type:Type,
-  category:Category,
-  manufacturer:Manufacturer,
-  creator:User
+  categoryId:number,
+  manufacturerId:number,
+  typeId:number,
+
 
 
 }
