@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+
+  <header class="header-area overlay">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Enoteca.it</a>
+
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+        </button>
+
+        <div id="main-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li><a href="#" class="nav-item nav-link active">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item nav-link" data-toggle="dropdown">Wines</a> <!--Categories-->
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Red wines</a>
+                <a href="#" class="dropdown-item">White wines</a>
+                <a href="#" class="dropdown-item">Sparkling wines</a>
+              </div>
+            </li>
+            <li><a href="#" class="nav-item nav-link">Types</a></li>
+            <li><a href="#" class="nav-item nav-link">Manufacturers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="container">
+        <h1>Welcome to our online winary!</h1>
+        <br>
+        <p><i>"Wine makes daily living easier, less hurried, with fewer tensions and more tolerance." <br> - Benjamin Franklin</i></p>
+        <a href="#content" class="button button-primary">Our wine collection</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="content" class="content">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <div class="container">
+        <div class="row clearfix">
+          <!--<div *ngFor="let wine of wines">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card product_item">
+                <div class="body">
+                  <div class="cp_img">
+                    <img src={{wine.imageUrl}} alt="Product" class="img-fluid">
+                    <div class="hover">
+                      <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                      <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                  <div class="product_details">
+                    <h5><a href="">{{wine.name}}</a></h5>
+                    <ul class="product_price list-unstyled">
+                      <li class="old_price">€{{wine.price}}</li>
+                      <li class="new_price">Type: {{wine.category.name}}</li>
+                      <li class="new_price">Variety: {{wine.type.name}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[0].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="">{{wines[0].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[0].price}}</li>
+                    <li class="new_price">Type: {{wines[0].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[0].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[1].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[1].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[1].price}}</li>
+                    <li class="new_price">Type: {{wines[1].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[1].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[2].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[2].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[2].price}}</li>
+                    <li class="new_price">Type: {{wines[2].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[2].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[3].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[3].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[3].price}}</li>
+                    <li class="new_price">Type: {{wines[3].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[3].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[4].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[4].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[4].price}}</li>
+                    <li class="new_price">Type: {{wines[4].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[4].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[5].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[5].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[5].price}}</li>
+                    <li class="new_price">Type: {{wines[5].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[5].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[6].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[6].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[6].price}}</li>
+                    <li class="new_price">Type: {{wines[6].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[6].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[7].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[7].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[7].price}}</li>
+                    <li class="new_price">Type: {{wines[7].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[7].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[8].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[8].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[8].price}}</li>
+                    <li class="new_price">Type: {{wines[8].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[8].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+              <div class="body">
+                <div class="cp_img">
+                  <img src={{wines[9].imageUrl}} alt="Product" class="img-fluid">
+                  <div class="hover">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                    <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                  </div>
+                </div>
+                <div class="product_details">
+                  <h5><a href="ec-product-detail.html">{{wines[9].name}}</a></h5>
+                  <ul class="product_price list-unstyled">
+                    <li class="old_price">€{{wines[9].price}}</li>
+                    <li class="new_price">Type: {{wines[9].category.name}}</li>
+                    <li class="new_price">Variety: {{wines[9].type.name}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+      jQuery(function($) {
+          $(window).on('scroll', function() {
+              if ($(this).scrollTop() >= 200) {
+                  $('.navbar').addClass('fixed-top');
+              } else if ($(this).scrollTop() == 0) {
+                  $('.navbar').removeClass('fixed-top');
+              }
+          });
+
+          function adjustNav() {
+              var winWidth = $(window).width(),
+                  dropdown = $('.dropdown'),
+                  dropdownMenu = $('.dropdown-menu');
+
+              if (winWidth >= 768) {
+                  dropdown.on('mouseenter', function() {
+                      $(this).addClass('show')
+                          .children(dropdownMenu).addClass('show');
+                  });
+
+                  dropdown.on('mouseleave', function() {
+                      $(this).removeClass('show')
+                          .children(dropdownMenu).removeClass('show');
+                  });
+              } else {
+                  dropdown.off('mouseenter mouseleave');
+              }
+          }
+
+          $(window).on('resize', adjustNav);
+
+          adjustNav();
+      });
+  </script>
+
+  </body>
+</html>
+
