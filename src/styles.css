@@ -1,4 +1,5 @@
-/* Navigation bar */
+/*
+!* Navigation bar *!
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -323,7 +324,7 @@ p {
   }
 }
 
-/* Wines grid */
+!* Wines grid *!
 body{
   margin-top:20px;
   background-color: #f4f7f6;
@@ -663,3 +664,47 @@ body{
   padding: 20px;
   font-weight: 400;
 }
+*/
+
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+body{
+  margin-top:20px;
+  background: #f5f5f5;
+}
+.card {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  margin-bottom: 30px;
+}
+.w-60 {
+  width: 60px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.social-links li a {
+  -webkit-border-radius: 50%;
+  background-color: rgba(89,206,181,.85);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  font-size: 12px;
+}
+a {
+  color: #707070;
+}
+.jumbotron {
+  background-image: url("https://images.pexels.com/photos/1374552/pexels-photo-1374552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+}
+
+
+

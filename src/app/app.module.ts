@@ -4,10 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
+import { WinesComponent } from './wines/wines.component';
+import {WineService} from "./Wine/wine.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WinesComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,7 @@ import {CommonModule} from "@angular/common";
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [WineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

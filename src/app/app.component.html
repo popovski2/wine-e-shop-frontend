@@ -1,3 +1,4 @@
+<!--
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,7 +25,7 @@
           <ul class="navbar-nav ml-auto">
             <li><a href="#" class="nav-item nav-link active">Home</a></li>
             <li class="dropdown">
-              <a href="#" class="nav-item nav-link" data-toggle="dropdown">Wines</a> <!--Categories-->
+              <a href="#" class="nav-item nav-link" data-toggle="dropdown">Wines</a> &lt;!&ndash;Categories&ndash;&gt;
               <div class="dropdown-menu">
                 <a href="#" class="dropdown-item">Red wines</a>
                 <a href="#" class="dropdown-item">White wines</a>
@@ -53,7 +54,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
       <div class="container">
         <div class="row clearfix">
-          <!--<div *ngFor="let wine of wines">
+          &lt;!&ndash;<div *ngFor="let wine of wines">
             <div class="col-lg-3 col-md-4 col-sm-12">
               <div class="card product_item">
                 <div class="body">
@@ -75,7 +76,7 @@
                 </div>
               </div>
             </div>
-          </div>-->
+          </div>&ndash;&gt;
           <div class="col-lg-3 col-md-4 col-sm-12">
             <div class="card product_item">
               <div class="body">
@@ -330,3 +331,409 @@
   </body>
 </html>
 
+-->
+
+
+<!--NAV BAR-->
+<!--
+<div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+  <a class="navbar-brand" href="#">Bootstrap 4 NavBar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://fontenele.github.io/bootstrap-navbar-dropdowns/" target="_blank">Github</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+          <li class="dropdown-item" href="#"><a>Action 1</a></li>
+          <li class="dropdown-item dropdown">
+            <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
+              <li class="dropdown-item" href="#"><a>Action 1.1</a></li>
+              <li class="dropdown-item dropdown">
+                <a class="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
+                  <li class="dropdown-item" href="#"><a>Action 1.1.1</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+          <li class="dropdown-item" href="#"><a>Action 2 A</a></li>
+          <li class="dropdown-item" href="#"><a>Action 2 B</a></li>
+          <li class="dropdown-item" href="#"><a>Action 2 C</a></li>
+          <li class="dropdown-item dropdown">
+            <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+              <li class="dropdown-item" href="#"><a>Action 2.1 A</a></li>
+              <li class="dropdown-item" href="#"><a>Action 2.1 B</a></li>
+              <li class="dropdown-item" href="#"><a>Action 2.1 C</a></li>
+              <li class="dropdown-item dropdown">
+                <a class="dropdown-toggle" id="dropdown2-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1.1</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2-1-1">
+                  <li class="dropdown-item" href="#"><a>Action 2.1.1 A</a></li>
+                  <li class="dropdown-item" href="#"><a>Action 2.1.1 B</a></li>
+                  <li class="dropdown-item" href="#"><a>Action 2.1.1 C</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item dropdown">
+                <a class="dropdown-toggle" id="dropdown2-1-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1.2</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2-1-2">
+                  <li class="dropdown-item" href="#"><a>Action 2.1.2 A</a></li>
+                  <li class="dropdown-item" href="#"><a>Action 2.1.2 B</a></li>
+                  <li class="dropdown-item" href="#"><a>Action 2.1.2 C</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+<main role="main" class="container">
+  <div class="jumbotron text-center">
+    <h1 style="color: white">ENOTECA</h1>
+    <p class="lead text-info">WELCOME TO OUR WINE BAR</p>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+&lt;!&ndash; BODY &ndash;&gt;
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container" id="main">
+  <div class="row">
+    <div *ngFor = "let wine of wines" class="col-md-6 col-xl-3">
+      <div class="card m-b-30">
+        <div class="card-body row">
+          <div class="col-6">
+            <a href=""><img src="{{wine?.imageUrl}}" alt="" class="img-fluid rounded-circle w-60"></a>
+          </div>
+          <div class="col-6 card-title align-self-center mb-0">
+            <h5>{{wine.name}}</h5>
+            <p class="m-0">{{wine?.price}}</p>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Manufacturer : {{wine.manufacturer.name}}</li>
+          <li class="list-group-item"><i class="fa fa-phone float-right"></i>Type: {{wine.type.name}}</li>
+        </ul>
+        <div class="card-body">
+          <div class="float-right btn-group btn-group-sm">
+            <a href="#" class="btn btn-primary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+            <a href="#" class="btn btn-secondary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
+          </div>
+          <ul class="social-links list-inline mb-0">
+            <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+&lt;!&ndash; Add Wine Modal  &ndash;&gt;
+<div class="modal fade" id="addWineModal" tabindex="-1" role="dialog" aria-labelledby="addWineModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addWineModalLabel">Add Wine</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #addForm="ngForm" (ngSubmit)="onAddWine(addForm)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" ngModel name="name" class="form-control" id="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" ngModel name="email" class="form-control" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Job title</label>
+            <input type="text" ngModel name="jobTitle" class="form-control" id="jobTile" placeholder="Job title" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" ngModel name="phone" class="form-control" id="phone" placeholder="Phone" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Image URL</label>
+            <input type="text" ngModel name="imageUrl" class="form-control" id="imageUrl" placeholder="Image URL" required>
+          </div>
+          <div class="modal-footer">
+&lt;!&ndash;
+            <button type="button" id="add-wine-form" class="btn btn-secondary" data-dismiss="modal">Close</button>
+&ndash;&gt;
+            <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Save changes</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+&lt;!&ndash; Edit Modal &ndash;&gt;
+<div class="modal fade" id="updateWineModal" tabindex="-1" role="dialog" aria-labelledby="wineEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateWineModalLabel">Edit Wine {{editWine?.name}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #editForm="ngForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" ngModel="{{editWine?.name}}" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+          </div>
+          <input type="hidden" ngModel="{{editWine?.id}}" name="id" class="form-control" id="id" placeholder="Email">
+          <input type="hidden" ngModel="{{editWine?.price}}" name="userCode" class="form-control" id="userCode" placeholder="Email">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" ngModel="{{editWine?.quantity}}" name="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Job title</label>
+            <input type="text" ngModel="{{editWine?.type}}" name="jobTitle" class="form-control" id="jobTitle" placeholder="Job title">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" ngModel="{{editWine?.manufacturer}}" name="phone" class="form-control" id="phone" name="phone" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <label for="phone">Image URL</label>
+            <input type="text" ngModel="{{editWine?.imageUrl}}" name="imageUrl" class="form-control" id="imageUrl" placeholder="Image URL">
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button (click)="onUpdateWine(editForm.value)" data-dismiss="modal" class="btn btn-primary" >Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+&lt;!&ndash; Delete Modal &ndash;&gt;
+<div class="modal fade" id="deleteWineModal" tabindex="-1" role="dialog" aria-labelledby="deleteModelLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModelLabel">Delete Wine</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this wine {{deleteWine.name}}?</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button (click)="onDeleteWine(deleteWine.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" style="color:white;">Wine Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="onOpenModal( 'add',null!)">Add Wine <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+   <!-- <form class="form-inline my-2 my-lg-0">
+      <input type="search" (ngModelChange)="searchEmployees(key.value)" #key="ngModel" ngModel
+             name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search employees..." required>
+    </form>-->
+  </div>
+</nav>
+
+<br/>
+<br/><br/><br/><br/>
+
+<div class="container" id="main-container">
+  <div class="row">
+    <div *ngFor="let wine of wines" class="col-md-6 col-xl-3">
+      <div class="card m-b-30">
+        <div class="card-body row">
+          <div class="col-6">
+            <a href=""><img src="{{wine.imageUrl}}" alt="" class="img-fluid rounded-circle w-60"></a>
+          </div>
+          <div class="col-6 card-title align-self-center mb-0">
+            <h5>{{wine.name}}</h5>
+            <p class="m-0">{{wine.price}}</p>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa fa-envelope float-right"></i>{{wine.manufacturer.name}}</li>
+          <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{wine.type.name}}</li>
+        </ul>
+        <div class="card-body">
+          <div class="float-right btn-group btn-group-sm">
+            <a (click)="onOpenModal( 'edit',wine)" class="btn btn-primary tooltips" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+            <a (click)="onOpenModal( 'delete',wine)" class="btn btn-secondary tooltips" data-placement="top" data-original-title="Delete"><i class="fa fa-times"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Wine Modal -->
+  <div class="modal fade" id="addWineModal" tabindex="-1" role="dialog"  aria-labelledby="addWineModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addWineModalLabel">Add Wine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form #addForm="ngForm" (ngSubmit)="onAddWine(addForm)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" ngModel name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" ngModel name="email" class="form-control"  placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Job title</label>
+              <input type="text" ngModel name="jobTitle" class="form-control" id="jobTile" placeholder="Job title" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" ngModel name="phone" class="form-control" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Image URL</label>
+              <input type="text" ngModel name="imageUrl" class="form-control" placeholder="Image URL" required>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="add-wine-form" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Save changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="updateWineModal" tabindex="-1" role="dialog" aria-labelledby="wineEditModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateEmployeeModalLabel">Edit Employee {{editWine?.name}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form #editForm="ngForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" ngModel="{{editWine?.name}}" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+            </div>
+            <input type="hidden" ngModel="{{editWine?.id}}" name="id" class="form-control" id="id" placeholder="Email">
+            <input type="hidden" ngModel="{{editWine?.price}}" name="userCode" class="form-control" id="userCode" placeholder="Email">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" ngModel="{{editWine?.manufacturer}}" name="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Job title</label>
+              <input type="text" ngModel="{{editWine?.type}}" name="jobTitle" class="form-control" id="jobTitle" placeholder="Job title">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" ngModel="{{editWine?.category}}" name="phone" class="form-control" id="phone" name="phone" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <label for="phone">Image URL</label>
+              <input type="text" ngModel="{{editWine?.quantity}}" name="imageUrl" class="form-control" id="imageUrl" placeholder="Image URL">
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Close</button>
+              <button (click)="onUpdateWine(editForm.value)" data-dismiss="modal" class="btn btn-primary" >Save changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Modal -->
+  <div class="modal fade" id="deleteWineModal" tabindex="-1" role="dialog" aria-labelledby="deleteModelLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModelLabel">Delete Wine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete wine {{deleteWine?.name}}?</p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            <button (click)="onDeleteWine(deleteWine!.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Notification for no wines -->
+<div *ngIf="wines?.length == 0" class="col-lg-12 col-md-12 col-xl-12">
+  <div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">NO WINES!</h4>
+    <p>No Employees were found.</p>
+  </div>
+</div>
